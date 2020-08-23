@@ -14,6 +14,11 @@ public class DogTest extends TestCase {
     }
 
     public void testGetAge() {
+        Dog dog = new Dog();
+        dog.setAge(3);
+        int expected = 3;
+        int actual = dog.getAge();
+        assertEquals(expected, actual);
     }
 
     public void testGetColor() {
