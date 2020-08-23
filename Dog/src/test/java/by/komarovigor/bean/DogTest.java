@@ -53,5 +53,12 @@ public class DogTest extends TestCase {
     }
 
     public void testTestToString() {
+        Dog dog = new Dog();
+//        System.out.println("dog.toString() = " + dog.toString());
+        String expected = "Dog{name='null', age=0, color='null'}";
+        String actual = dog.toString();
+        assertEquals(expected, actual);
+
+
     }
 }
