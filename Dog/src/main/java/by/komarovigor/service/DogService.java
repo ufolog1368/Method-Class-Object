@@ -1,30 +1,22 @@
 package by.komarovigor.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class DogService {
-    Logger logger = LoggerFactory.getLogger(DogService.class);
+    public  static final String DOG_VOICE = "Hau hau hau";
+    public  static final String DOG_EAT = "om-nom-nom";
+    public  static final String DOG_SLEEP = "Zzzzzzzzzzzzzzzz";
 
-    public void Voice(boolean say){
-        if (!say){
-            return;
-        }
-        logger.info("Hau hau hau");
-        return;
+    public String voice(){
+        return DOG_VOICE;
     }
-    public void Eat(boolean say){
-        if (!say) {
-            return;
-        }
-        logger.info("om-nom-nom");
-        return;
+    public String eat() {
+        return DOG_EAT;
     }
-    public void Sleep(boolean say){
-        if (!say) {
-            return;
-        }
-        logger.info("Zzzzzz");
-        return;
+    public String sleep() {
+        return DOG_SLEEP;
     }
+
 }
+
+

@@ -1,37 +1,31 @@
 package by.komarovigor.service;
 
+
 import junit.framework.TestCase;
 
 public class DogServiceTest extends TestCase {
 
-    public void testShouldPrintVoice() {
-        DogService dogService = new DogService();
-        dogService.Voice(true);
+    public void testVoiceTest() {
+        DogService dogService=new DogService();
+        String expected = "Hau hau hau";
+        String actual=dogService.voice();
+        assertEquals(expected, actual);
     }
 
-    public void testShouldPrintNotVoiceTest() {
-        DogService dogService = new DogService();
-        dogService.Voice(false);
+    public void testEatTest() {
+        DogService dogService=new DogService();
+        dogService.eat();
+        String expected = "om-nom-nom";
+        String actual=dogService.eat();
+        assertEquals(expected,actual);
+
     }
 
-    public void testShouldPrintEatTest() {
-        DogService dogService = new DogService();
-        dogService.Eat(true);
-    }
-
-    public void testShouldPrintNotEatTest() {
-        DogService dogService = new DogService();
-        dogService.Eat(false);
-    }
-
-    public void testDhouldPrintSleepTest() {
-            DogService dogService = new DogService();
-            dogService.Sleep(true);
-    }
-
-    public void testShouldPrintNotSleepTest() {
-        DogService dogService = new DogService();
-        dogService.Sleep(false);
-
+    public void testSleepTest() {
+        DogService dogService=new DogService();
+        dogService.sleep();
+        String expected = "Zzzzzzzzzzzzzzzz";
+        String actual=dogService.sleep();
+        assertEquals(expected,actual);
     }
 }
