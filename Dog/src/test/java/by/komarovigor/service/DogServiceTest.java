@@ -9,33 +9,29 @@ public class DogServiceTest extends TestCase {
         dogService.Voice(true);
     }
 
-    public void testShouldPrintNotVoiveTest() {
+    public void testShouldPrintNotVoiceTest() {
         DogService dogService = new DogService();
         dogService.Voice(false);
     }
 
     public void testShouldPrintEatTest() {
         DogService dogService = new DogService();
-        dogService.Voice(true);
-
+        dogService.Eat(true);
     }
 
     public void testShouldPrintNotEatTest() {
         DogService dogService = new DogService();
-        dogService.Voice(false);
-
+        dogService.Eat(false);
     }
 
     public void testDhouldPrintSleepTest() {
             DogService dogService = new DogService();
-            dogService.Voice(true);
-
-        }
-
+            dogService.Sleep(true);
+    }
 
     public void testShouldPrintNotSleepTest() {
         DogService dogService = new DogService();
-        dogService.Voice(false);
+        dogService.Sleep(false);
 
     }
 }
