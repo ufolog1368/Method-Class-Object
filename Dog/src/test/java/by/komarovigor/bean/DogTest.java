@@ -30,6 +30,15 @@ public class DogTest extends TestCase {
     }
 
     public void testTestEquals() {
+        Dog dog1 = new Dog();
+        dog1.setName("Bob");
+
+        Dog dog2 = new Dog();
+        dog2.setName("Bob");
+
+        boolean expected = true;
+        boolean actual = dog1.equals(dog2);
+        assertEquals(expected, actual);
     }
 
     public void testTestHashCode() {
