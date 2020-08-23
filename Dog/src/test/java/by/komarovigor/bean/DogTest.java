@@ -22,6 +22,11 @@ public class DogTest extends TestCase {
     }
 
     public void testGetColor() {
+        Dog dog = new Dog();
+        dog.setColor("Orange");
+        String expected = "Orange";
+        String actual = dog.getColor();
+        assertEquals(expected, actual);
     }
 
     public void testTestEquals() {
