@@ -42,6 +42,14 @@ public class DogTest extends TestCase {
     }
 
     public void testTestHashCode() {
+        Dog dog = new Dog();
+        dog.setName("Bob");
+        dog.setAge(3);
+        dog.setColor("Orange");
+        long expected = -1860600993;
+        long actual = dog.hashCode();
+        assertEquals(expected ,actual);
+
     }
 
     public void testTestToString() {
