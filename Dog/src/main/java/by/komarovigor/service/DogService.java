@@ -25,5 +25,6 @@ public class DogService {
             return;
         }
         logger.info("Zzzzzz");
+        return;
     }
 }
