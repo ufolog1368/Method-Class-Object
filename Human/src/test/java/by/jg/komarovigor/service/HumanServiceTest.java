@@ -13,7 +13,7 @@ public class HumanServiceTest {
 
     @Test
     public void greet() {
-        var human = new Human();
+        var human = new Human(34, "Den");
         var humanService = new HumanService();
         String expected = "[main] INFO  by.jg.komarovigor.service.HumanService  - Age = 16, Name = Pit\n";
         humanService.greet();
